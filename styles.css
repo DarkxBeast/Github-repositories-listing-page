@@ -1,0 +1,288 @@
+body {
+    background-color: #FFF8F0;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header {
+    display: flex;
+    margin: -8px ;
+}
+.rectangle{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    background: #a9f9c1;
+}
+
+#header-title {
+    font-family: League Spartan, sans-serif;
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    padding: 8px 0px 0px 32px;
+}
+
+#header-title a {
+    color: inherit;
+    text-decoration: none;
+}
+.search-container {
+    width: 80%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+.search-bar {
+    width: 40%;
+    background: #FFFFFF;
+    border: 1px solid #a9f9c1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 8px 0px 8px 120px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: League Spartan, sans-serif;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+}
+
+.Page-group {
+    width: 24%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: League Spartan, sans-serif;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 8px 0px 8px -32px;
+
+}
+
+.Page-group-item {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0px 8px 0px 8px;
+}
+
+.Page-group select {
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #070707;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 4px 0px 0px 8px;
+    font-family: League Spartan, sans-serif;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #000000;
+}
+
+.Page-group select option {
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: League Spartan, sans-serif;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    text-align: center;
+}
+
+.search-button {
+    width: auto;
+    height: auto;
+    background: #68cafb;
+    border: 1px solid #a9f9c1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 8px 0px 8px -32px;
+}
+
+.search-button button {
+    width: auto;
+    height: 40px;
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: League Spartan, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#welcome-text {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: League Spartan, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 8px;
+    margin-top: 200px;
+}
+
+#spinner {
+    border: 16px solid #f0f0f0;
+    border-top: 16px solid #010101;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    animation: spin 2s linear infinite;
+    /* Add the following lines */
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#profileCard {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: #ffffff;
+    border: 1px solid #a9f9c1;
+    border-radius: 5px; 
+    padding: 16px; 
+    margin: 40px 0px 8px 372px;
+    box-shadow: 0 2px 5px #a9f9c1; 
+}
+
+#profileCard .card-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 32%; 
+    border-radius: 50%;
+    margin-left: 32%; 
+    margin-right: 10px;
+}
+
+#profileCard .card-body-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 8px; 
+}
+
+#profileCard .card-title {
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#profileCard .card-text {
+    margin: 16px; 
+    font-size: 16px;
+}
+
+
+
+#repositories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 16px 16px 16px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#repositories.fade-out {
+    opacity: 0;
+}
+
+
+.card {
+    width: calc(33.33% - 32px); /* Subtract the left and right margin */
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px #a9f9c1;
+    border: 1px solid #a9f9c1; 
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 24px 0px 16px 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    gap: 8px;
+
+}
+
+#pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #a9f9c1; 
+    color: #000; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#pagination button:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}

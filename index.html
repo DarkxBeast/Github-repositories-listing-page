@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=League+Spartan:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <title>Github Library</title>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="rectangle">
+                <div id="header-title">
+                    <a href=".">
+                        <h1>Git Lib </h1>
+                    </a>
+                </div>
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" id="username" placeholder="Enter GitHub Username"
+                            onkeyup="if(event.keyCode === 13) fetchRepositories(); ">
+                    </div>
+                    <div class="Page-group">
+                        <div class="Page-group-item">
+                            <label for="perPage">Repositories per Page:</label>
+                            <select id="perPage" class="Page-group-item" onchange="location.reload">
+                                <option value="10">10</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-button">
+                        <button id="search" type="button" onclick="fetchRepositories()">Get Repos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="welcome-text">
+                <h1 style="text-decoration: underline;">Welcome to GIT-LIB <br></h1>
+                    <h1>Search for GitHub repositories</h1>
+            </div>
+            <div>
+                <div id="spinner" style="display:none;"></div>
+                <div id="profileCard" class="profile-card" style="display: none;">
+                    <img class="card-img" src="" alt="Profile picture">
+                    <div class="card-body-profile">
+                        <h2 class="card-title"></h2>
+                        <p class="card-text">p>
+                    </div>
+                </div>
+                <div id="repositories"></div>
+            </div>
+            <template id="repo-template" style="display: flex;">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title"></h2>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                        <p class="card-text"><strong>Language:</strong></p>
+                        <a href="#" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </template>
+            <div id="pagination"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
